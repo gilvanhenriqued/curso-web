@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Exercícios HTML</h1>
+    </header>
+    <nav>
+        <a href="/exercicios/teste.html">Teste</a> |
+        <a href="/exercicios/temp.html">Temp</a> |
+        <a href="/exercicios/links.html">Links</a> |
+        <a href="/exercicios/tabelas.html">Tabelas</a> |
+        <a href="/exercicios/formularios/form.html">Formularios</a> |
+        <a href="/exercicios/imagens.html">Imagens</a> |
+        <a href="/exercicios/video.html">Video</a> |
+        <a href="/exercicios/tagsNaoVisuais.html">Tags Não Visuais</a>
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+        <br>
+        Curso de Web Moderno
+    </footer>
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function(e){
+                e.preventDefault()
+                fetch(link.href)
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+</html>
+
+<style>
+    section{
+        margin: 30px 0 30px 0;
+    }
+</style>

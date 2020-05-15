@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Iniciando CSS</title>
+    <style>
+        h1{
+            font-size: 40px;
+        }
+        .fundoVermelho {
+            background-color: red;
+        }
+        .negrito{
+            font-weight: bold;
+        }
+        #textoPrincipal {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS</h1>
+    <!-- O ID é único, mas a classe pode ser reusada nas outras tags -->
+    <span id="textoPrincipal">Texto 1</span> <br>
+    <span class="fundoVermelho negrito">Texto 2</span> <br>
+    <!-- Para usar uma  tag com atributo personalizado: document.querySelector('[nome]')-->
+    <span class="fundoVermelho" nome>Texto 3</span>
+</body>
+
+</html>
