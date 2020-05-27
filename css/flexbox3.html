@@ -6,7 +6,15 @@
     <title>Flexbox #03</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .flex-container div:nth-child(2) {
+            flex-grow: 3;
+        }
     </style>
 </head>
 
