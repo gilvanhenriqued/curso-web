@@ -1,0 +1,42 @@
+jQuery
+
+    jQuery is a JavaScript library that simplifies the JS programming. With this tool,
+it's possible manipulate the DOM (HTML and CSS), activity HTML events, effects and animations,
+beyong AJAX requests.  
+    The flag of this library is "write less, do more.". He simplifies the DOM manipulation
+and AJAX calls. jQuery is the most popular and extendable JS library.
+    There are two versions for downloading, the production version (minified), and the
+development version, beyong CDN puting with the HTML tag <script>, that shold be inside at 
+<head> section. The CDN has the advantage because load from cache of the users, becoming faster.
+    The fundamental of syntax is that jQuery select HTML elements, and perform actions on them.
+The basic syntax is: $(selector).action(). For exemple: $(".test").hide() - hides all elements 
+with class="test". All jQuery methods are inside a document ready event: 
+    $(document).ready(function(){  
+        // the methods
+        // $(function() { //methods }) is the short form
+    })
+
+    The jQuery selectors is based on the CSS selectors:
+    $("button") name for elements
+    $("#test") # for id
+    $(".test") . for classes
+    $(this) for current elements
+    $("[href]") for attributes
+    $("tr:first") for first row of a table
+
+    An event represents the moment when something happens, like moving a mouse over an element,
+selecting a radio button, or clicking on an element. There are four event types: 
+    mouse: click, dblclick, mouseenter, mouseleave;
+    keyboard: keypress, keydown, keyup;
+    form: submit, change, focus, blur;
+    document/window: load, resize, scroll, unload.
+    The on method select one or more events.
+
+
+
+
+
+
+
+
+
